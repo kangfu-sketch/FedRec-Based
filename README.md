@@ -1,4 +1,12 @@
 This repository provides **a foundational framework** for federated recommendation systems. 
+
+## Notes
+This repository is **modified from the open-source PFedRec codebase**:
+* Original repository: (https://github.com/Zhangcx19/IJCAI-23-PFedRec)
+* **`train.py`** is the main training entry script.
+* All federated training, client sampling, local updates, and global aggregation are launched from this file.
+* The parameters of the **`affine_output` layer** can be **interpreted as user embeddings**. (mlp.py)
+
 ## !! Before running the code, please create a `log` directory in the root directory of the model.
 ```
 .
@@ -15,14 +23,6 @@ This repository provides **a foundational framework** for federated recommendati
 ├── train.py         
 ├── utils.py          
 ```
-
-## Notes
-This repository is **modified from the open-source PFedRec codebase**:
-* Original repository: (https://github.com/Zhangcx19/IJCAI-23-PFedRec)
-* **`train.py`** is the main training entry script.
-* All federated training, client sampling, local updates, and global aggregation are launched from this file.
-* The parameters of the **`affine_output` layer** can be **interpreted as user embeddings**. (mlp.py)
-
 
 You can start training directly via:
 ```bash
